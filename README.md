@@ -48,12 +48,16 @@ The focus is on understanding the model’s behavior and making sensible decisio
 
 ## Project Structure
 
-churn-prediction-system/  
-├── notebooks/  
-│   └── 01_churn_modeling_with_threshold_selection.ipynb  
-│  
-├── data/  
-│   └── telecom_churn_raw.csv  
-│  
-├── README.md  
-└── .gitignore  
+## Project Structure
+
+```
+churn-prediction-system/
+├── notebooks/
+│   └── 01_churn_modeling_with_threshold_selection.ipynb
+│
+├── data/
+│   └── telecom_churn_raw.csv
+│
+├── README.md
+└── .gitignore
+```

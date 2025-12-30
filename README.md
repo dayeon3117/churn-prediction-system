@@ -1,14 +1,59 @@
-# churn-prediction-system
-End to end machine learning system for predicting user churn from behavioral data
+# Customer Churn Prediction System
 
-## Problem
+This project explores how to predict customer churn from behavioral data using a clean end to end machine learning workflow.  
+The focus is on understanding churn drivers and making practical modeling decisions.
 
-User churn is costly and often invisible until it is too late. This project builds an end to end machine learning system to predict churn risk from user behavior data.
+## Project Overview
 
-## Goal
+Customer churn is costly and often difficult to detect early.  
+This project builds a churn prediction pipeline that analyzes customer usage patterns and estimates churn risk before customers leave.
 
-Predict whether a user is likely to churn in the near future and expose predictions through an API.
+The notebook emphasizes clarity, evaluation and decision making rather than model complexity.
 
-## Scope
+## Data
 
-This project focuses on data ingestion, feature engineering, model training, evaluation and deployment readiness.
+The dataset contains customer account information and usage behavior such as call minutes, charges, service plans, and customer service interactions.
+
+The target variable indicates whether a customer eventually churned.
+
+## Modeling Approach
+
+The project follows a simple and interpretable workflow:
+
+- Exploratory data analysis to understand usage patterns
+- Feature preparation and basic preprocessing
+- Supervised classification to predict churn probability
+- Model evaluation using standard metrics
+- Decision threshold selection based on tradeoffs between false positives and false negatives
+
+Rather than optimizing for a single metric, the notebook treats threshold choice as a business decision.
+
+## Evaluation
+
+Model performance is evaluated using classification metrics and probability outputs.  
+Different decision thresholds are explored to understand how sensitivity and precision change depending on business priorities.
+
+
+## How to Run
+
+Create a Python environment  
+Install common ML libraries such as pandas and scikit learn  
+Open the notebook in the notebooks folder and run it top to bottom
+
+## Notes
+
+This project is intended as a clear and readable example of applied machine learning.  
+The focus is on understanding the model’s behavior and making sensible decisions rather than building overly complex models.
+
+
+## Project Structure
+
+churn-prediction-system/  
+├── notebooks/  
+│   └── 01_churn_modeling_with_threshold_selection.ipynb  
+│  
+├── data/  
+│   └── telecom_churn_raw.csv  
+│  
+├── README.md  
+└── .gitignore  
